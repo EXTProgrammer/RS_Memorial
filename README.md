@@ -21,7 +21,6 @@ Site sem hospedagem no momento (WebHost caiu).
 - [Tecnologias](#-tecnologias)
 - [Funcionalidades](#-funcionalidades)
 - [Contribuição](#-contribuição)
-- [Licença](#-licença)
 - [Instalação](#-instalação)
 
 ---
