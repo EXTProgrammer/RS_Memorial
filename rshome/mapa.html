@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head> 
+
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_map_of_Rio_Grande_do_Sul.svg">
+
+    <!-- Link para os ícones do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Conexão prévia com o Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte Poppins do Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="mapa.css">
+
+    <!-- Conexão prévia com o Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte Open Sans do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Configurações de meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Memorial | Mapas interativo</title>
+</head>
+
+<body>
+    <!-- Início do cabeçalho -->
+    <header id="header">
+        <div class="container">
+            <div class="flex">
+                <!-- Logotipo com link para a página inicial -->
+                <a href="index.html" class="logo"><img src="imagens/logo.png" alt="RS Memorial" width="180px"></a>
+                <nav>
+                    <ul class="desktop-menu">
+                        <li><a href="historia.html">História</a></li>
+                        <li><a href="mural.php">Mural</a></li>
+                        <li><a href="dp.php">Depoimentos</a></li>
+                        <li><a href="mapa.html">Mapa</a></li>
+                        <li><a href="ajuda.html" class="ajudar">Como Ajudar</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+                    <!-- Ícone de menu para dispositivos móveis -->
+                    <div class="desktop-menu-icon" onclick="toggleMenu()">
+                        ☰
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Inclusão do arquivo de script -->
+    <script src="script.js"></script>
+
+    <!-- Início da seção do banner -->
+    <section class="banner">
+        <div class="txt-banner">
+            <h2>RS Memorial</h2>
+            <h3>Enchentes do Rio Grande do Sul em Detalhes</h3>
+            <h4>Veja as cidades atingidas pelas enchentes no RS</h4>
+            <div class="linha"></div>
+            <div class="linha-2"></div>
+        </div>
+        <div class="img-1">
+            <img src="img1.png" alt="">
+        </div>
+    </section>
+
+    <!-- Início da galeria de imagens -->
+    <div class="gallery-container">
+        <div class="image-container">
+            <img src="imagens/havan.png" alt="Imagem Principal 1" class="first-image">
+            <img src="imagens/havan2.png" alt="Imagem Secundária 1" class="second-image">
+        </div>
+        <div class="image-container">
+            <img src="imagens/poa.png" alt="Imagem Principal 2" class="first-image">
+            <img src="imagens/poa2.png" alt="Imagem Secundária 2" class="second-image">
+        </div>
+        <div class="image-container">
+            <img src="imagens/aeroporto.png" alt="Imagem Principal 3" class="first-image">
+            <img src="imagens/aeroporto2.png" alt="Imagem Secundária 3" class="second-image">
+        </div>
+        <div class="image-container">
+            <img src="imagens/canoas.png" alt="Imagem Principal 4" class="first-image">
+            <img src="imagens/canoas2.png" alt="Imagem Secundária 4" class="second-image">
+        </div>
+    </div>
+
+    <!-- Início da seção de locais -->
+    <div class="locais">
+        <p class="vermelho"><i class="bi bi-geo-alt-fill"></i>Loja Havan na cidade de Lajeado antes e depois da enchente
+        </p>
+        <div class="linha-vermelho"></div>
+        <p class="verde"><i class="bi bi-geo-alt-fill"></i>Centro de Porto Alegre antes e depois da enchente</p>
+        <div class="linha-verde"></div>
+        <p class="amarelo"><i class="bi bi-geo-alt-fill"></i>Aeroporto Salgado Filho em Porto Alegre antes e depois da
+            enchente</p>
+        <div class="linha-amarelo"></div>
+        <p class="marrom"><i class="bi bi-geo-alt-fill"></i>Cidade de Canoas antes e depois da enchente</p>
+        <div class="linha-marrom"></div>
+    </div>
+
+    <!-- Início da seção do mapa -->
+    <div class="mapa">
+        <div class="mapa-txt">
+            <h2>Cidades atingidas no RS</h2>
+            <div class="linha-3"></div>
+            <div class="linha-10"></div>
+            <p>No mapa abaixo, os municípios afetados são representados na cor vermelha. A cor azul representa os locais
+                não afetados, enquanto os pontos em amarelo são as cidades onde houve mortes confirmadas. Já os
+                marcadores marrons indicam onde há pessoas desaparecidas.</p>
+        </div>
+        <div class="mapa-inter">
+            <!-- Mapa interativo do Google Maps -->
+            <iframe src="https://www.google.com/maps/d/embed?mid=1xXye4eWT0X1nhpUpyksHwisuLNaUh28&ehbc=2E312F"
+                width="640" height="480"></iframe>
+        </div>
+    </div>
+
+    <!-- Início das informações sobre as enchentes -->
+    <div class="titulo-pessoas">
+        <div class="titulo">
+            <h2>Informações</h2>
+        </div>
+        <div class="atingidos">
+            <div class="pessoas" data-target="471">
+                <i class="bi bi-people"></i>
+                <h2>0</h2>
+                <h3>Cidades atingidas</h3>
+            </div>
+            <div class="pessoas-1" data-target="2000000">
+                <i class="bi bi-people"></i>
+                <h2>0</h2>
+                <h3>Pessoas atingidas</h3>
+            </div>
+            <div class="pessoas" data-target="600000">
+                <i class="bi bi-people"></i>
+                <h2>0</h2>
+                <h3>Fora de Casa</h3>
+            </div>
+            <div class="pessoas-1" data-target="170">
+                <i class="bi bi-people"></i>
+                <h2>0</h2>
+                <h3>Pessoas Mortas</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Início da seção de mapas e galerias -->
+    <div class="mapa-galeria">
+        <div class="galeria">
+            <div class="iframes">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1HSAFkH8tedMvM_awDWHfytTvlFZL8xs&ehbc=2E312F"
+                    width="640" height="480"></iframe>
+            </div>
+            <div class="iframes">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1OcH888gz9CExBQdxJ4GCwWqhjgRwcHQ&ehbc=2E312F"
+                    width="640" height="480"></iframe>
+            </div>
+            <div class="iframes">
+                <iframe src="https://www.google.com/maps/d/embed?mid=16WADmCbzNCqBJaYLnUzmUKje14fcwII&ehbc=2E312F"
+                    width="640" height="480"></iframe>
+            </div>
+        </div>
+        <p class="amarelo"><i class="bi bi-geo-alt-fill"></i>Cidades que teve mortes confirmadas</p>
+        <p class="marrom"><i class="bi bi-geo-alt-fill"></i>Locais com pessoas desaparecidas</p>
+        <p class="azul"><i class="bi bi-geo-alt-fill"></i>Cidades não afetadas pelas chuvas no RS</p>
+    </div>
+
+    <!-- Início do rodapé -->
+    <footer>
+        <div class="container-footer">
+            <div class="logo-footer">
+                <img src="imagens/logo.png" alt="">
+                <a href="membros.html"><button><i class="bi bi-person-circle"></i>Conheça-nos</button></a>
+
+                <div class="linha-10"></div>
+                <div class="linha-11"></div>
+            </div>
+
+            <div class="mapa-site">
+                <h2>Mapa do site</h2>
+                <ul>
+                    <a href="historia.html">
+                        <li>História</li>
+                    </a>
+                    <a href="mural.php">
+                        <li>Mural</li>
+                    </a>
+                    <a href="mapa.html">
+                        <li>Mapa</li>
+                    </a>
+                    <a href="dp.php">
+                        <li>Depoimentos</li>
+                    </a>
+                    <a href="ajuda.html">
+                        <li>Como ajudar</li>
+                    </a>
+                    <a href="sobre.html">
+                        <li>Sobre</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="voluntario">
+                <h2>Quer ser um voluntário?</h2>
+                <p>Para saber mais sobre como se tornar um voluntário e ajudar nas iniciativas de apoio à comunidade,
+                    acesse o site <a href="ajuda.html">SOS Rio Grande do Sul</a>. Sua colaboração é fundamental para
+                    fazermos a
+                    diferença!</p>
+
+            </div>
+
+
+            <div class="ajude">
+
+                <div class="txt-ajude">
+                    <h2>Dados para doação:</h2>
+                    <p>Pix para a conta SOS Rio Grande do Sul
+                        CNPJ: 92.958.800/0001-38
+                        Associação dos Bancos No Estado do Rio Grande do Sul ou Banco do Estado do Rio Grande do Sul (as
+                        duas opções podem aparecer)
+
+                    </p>
+                </div>
+
+                <div class="qrcode">
+                    <img src="https://www.estado.rs.gov.br/upload/recortes/202405/02155956_2129868_MDO.png" alt="">
+                    <button>QR Code para acessar a chave Pix</button>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="copy">&copy; RS Memorial - 2024</p>
+
+    </footer>
+</body>
+
+</html>

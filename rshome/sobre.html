@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- /* alguns comentarios... -->
+
+<!-- bem eu usei chatgpt para ajudar em alguns lugares especificos do codigo como o responsivo por exemplo, usei o animista tbm */ -->
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_map_of_Rio_Grande_do_Sul.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--link fonte googlefonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--link fonte googlefonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet"> <!--link fonte googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sobre.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Memorial | Sobre</title>
+    
+</head>
+
+
+<!-- começo do header -->
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="flex">
+
+                <a href="index.html" class="logo"><img src="imagens/logo.png" alt="RS Memorial" height="" width="180px"></a>
+                <nav>
+                    <ul class="desktop-menu">
+                        <li><a href="historia.html">História</a></li>
+                        <li><a href="mural.php">Mural</a></li>
+                        <li><a href="dp.php">Depoimentos</a></li>
+                        <li><a href="mapa.html">Mapa</a></li>
+                        <li><a href="ajuda.html" class="ajudar">Como Ajudar</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+                    <div class="desktop-menu-icon" onclick="toggleMenu()"> <!-- botão apenas para o responsivo -->
+                        ☰
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- fim do header -->
+
+    <!-- começo do banner -->
+    <div class="banner">
+        <div class="txt-banner">
+                <h2>RS Memorial</h2>
+                <h3>Mesmo nas enchentes, o RS mostra sua força: <br> juntos, superamos qualquer tempestade
+                </h3>
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+        </div>
+        <div class="img-responsivo">
+            <img src="imagens/Sobre.png" alt="">
+        </div>
+    </div> <br> <br>
+    <!-- fim do banner -->
+
+    <h1>SOBRE O SITE</h1> <br>
+
+    <section class="card"> <!-- flip é animação pegada de um site -->
+        <div class="pzito"> <!-- classe para formatação dos <p> -->
+            <p>Este site é uma recordação de um dos maiores desastres da história do <span class="red">Rio</span>
+                <span class="red">Grande</span> <span class="red">do</span> <span class="red">Sul</span>, um evento que
+                afetou profundamente nossas vidas de maneira direta e indireta. Queremos honrar aqueles que sofreram
+                perdas e demonstraram uma resiliência extraordinária diante dessa tragédia. Este espaço foi criado como
+                um memorial dedicado a esse evento histórico marcante, onde buscamos preservar a memória e prestar
+                nossas homenagens.
+            </p> <br>
+            <!-- as classes dos spans com nome de cores são para letras coloridas -->
+        </div>
+    </section> <br> <br> <br> <br> <br>
+
+
+
+
+    <h2 class="h2">SOBRE NOSSO GRUPO</h2> <br>
+
+    <section class="card"> <!-- flip é animação pegada de um site -->
+        <div>
+            <div class="pzito"> <!-- classe para formatação dos <p> -->
+                <p>Nosso grupo é composto por 6 membros, alguns dos quais foram afetados indiretamente, e todos nós
+                    sentimos
+                    a necessidade de não deixar esse momento passar em branco. Queremos compartilhar com todos como foi
+                    enfrentar essa situação e encorajar um diálogo aberto sobre o assunto. Empenhamos nossos esforços e
+                    dedicação neste site, dedicando-o a todos aqueles afetados. Expressamos nossa sincera gratidão ao
+                    <br>
+
+                    <a href="https://ios.org.br/"> <span class="ios">IOS
+                            (Instituto da Oportunidade Social)</span> </a> pela oportunidade e suporte oferecidos.
+                </p> <br>
+            </div>
+        </div>
+    </section>
+    <!-- esse <a> com span e etc, é para um link para o site do ios e uma menção ao Instituto -->
+
+    <div class="foto">
+            <!-- essa classe slide-top ela serve para animação da foto de subir e descer, ela foi pega de outro site -->
+            <img src="imagens/grupo.jpeg" alt="" width="750px" height="500px">
+    </div>
+
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="membros.html" class="button">Membros</a>
+        <!-- esse é o botão para ir aos membros (outra parte do site) -->
+    </div> <br> <br>
+
+    <footer>
+        <div class="container-footer">
+            <div class="logo-footer">
+                <img src="imagens/logo.png" alt="">
+               <a href="membros.html"><button><i class="bi bi-person-circle"></i>Conheça-nos</button></a>
+
+                <div class="linha-10"></div>
+                <div class="linha-11"></div>
+            </div>
+
+
+            <div class="mapa-site">
+                <h2>Mapa do site</h2>
+                <ul>
+                    <a href="historia.html">
+                        <li>História</li>
+                    </a>
+                    <a href="mural.php">
+                        <li>Mural</li>
+                    </a>
+                    <a href="mapa.html">
+                        <li>Mapa</li>
+                    </a>
+                    <a href="dp.php">
+                        <li>Depoimentos</li>
+                    </a>
+                    <a href="ajuda.html">
+                        <li>Como ajudar</li>
+                    </a>
+                    <a href="sobre.html">
+                        <li>Sobre</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="voluntario">
+                <h2>Quer ser um voluntário?</h2>
+                <p>Para saber mais sobre como se tornar um voluntário e ajudar nas iniciativas de apoio à comunidade,
+                    acesse o site <a href="ajuda.html">SOS Rio Grande do Sul</a>. Sua colaboração é fundamental para fazermos a
+                    diferença!</p>
+
+            </div>
+
+
+            <div class="ajude">
+
+                <div class="txt-ajude">
+                    <h2>Dados para doação:</h2>
+                    <p>Pix para a conta SOS Rio Grande do Sul
+                        CNPJ: 92.958.800/0001-38
+                        Associação dos Bancos No Estado do Rio Grande do Sul ou Banco do Estado do Rio Grande do Sul (as
+                        duas opções podem aparecer)
+
+                    </p>
+                </div>
+
+                <div class="qrcode">
+                    <img src="https://www.estado.rs.gov.br/upload/recortes/202405/02155956_2129868_MDO.png" alt="">
+                    <button>QR Code para acessar a chave Pix</button>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="copy">&copy; RS Memorial - 2024</p>
+        
+    </footer>
+
+
+</body>
+
+<!-- script que faz funcionar o flip -->
+<script>
+    AOS.init(); 
+</script>
+
+
+<script src="script.js"></script> <!-- link para o java script -->
+
+</html>

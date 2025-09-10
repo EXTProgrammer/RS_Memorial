@@ -1,0 +1,1094 @@
+@charset "UTF-8";
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #00923f;
+    width: 100%;
+    padding: 40px 5%;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    z-index: 100;
+}
+
+.logo {
+    margin-left: 70px;
+}
+
+.logo::after {
+    background-color: transparent;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.ajudar {
+    display: inline-block;
+    color: #00923f;
+    background-color: #FFF500;
+    padding: 10px;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.ajudar::after {
+    background-color: transparent;
+}
+
+.ajudar:hover {
+    transform: scale(1.2);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    position: relative;
+}
+
+header a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: white;
+    transition: width .4s;
+}
+
+header a:hover::after {
+    width: 100%;
+}
+
+.banner {
+    margin-top: -30px;
+    background-image: url(imagens/mapa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 6px solid;
+    border-image: linear-gradient(to right, #0c8741 0%, #0c8741 33%, #d22b2b 33%, #d22b2b 66%, #FFF500 66%, #FFF500 100%);
+    border-image-slice: 1;
+}
+
+.titulo {
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 4em;
+    color: #fff;
+}
+
+.titulo h2 {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.linha-1 {
+    border-bottom: dotted 3px #D22B2B;
+    margin-left: 50px;
+    margin-right: 300px;
+}
+
+.linha-2 {
+    border-bottom: dotted 3px #00923f;
+    margin-left: 50px;
+    margin-right: 250px;
+    padding: 2px 0;
+}
+
+.historia {
+    display: flex;
+    color: #fff;
+    margin: 50px 15%;
+    text-align: justify;
+}
+
+.historia img {
+    height: 270px;
+    margin-top: 30px;
+    margin-left: 25px;
+    border: solid 5px #00923f;
+    box-shadow: 5px 5px 3px #0000005b;
+}
+
+.historia h2 {
+    margin-left: 45px;
+    color: #000000;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.historia p {
+    width: 80%;
+    margin-left: 50px;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 550;
+    text-align: justify;
+}
+
+.historia .btn {
+    margin: 20px 0 0 45px;
+}
+
+.btn button {
+    background: #00923f;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+    width: 120px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    transition: .5s;
+}
+
+.btn button:hover {
+    transform: scale(1.1);
+}
+
+/*--------mural------*/
+.mural {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+section.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    transition: transform 0.5s ease;
+}
+
+.cards a {
+    text-decoration: none;
+}
+
+.card {
+    transition: 1s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card .img-card {
+    display: flex;
+    width: 280px;
+    height: 250px;
+    top: 0;
+    margin-bottom: 30px;
+}
+
+.card .img-card img {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content {
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    background-color: #00923F;
+    padding: 8px 10px;
+    border-radius: 30px;
+    height: 10px;
+    transition: .5s;
+}
+
+.card:hover .content {
+    height: 35px;
+}
+
+.card:hover .content p {
+    opacity: 1;
+}
+
+.content p {
+    color: #fff;
+    opacity: 0;
+    transition: .75s;
+}
+
+.m-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.mural button {
+    background: #00923f;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+    width: 120px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    transition: .5s;
+    margin-top: 50px;
+}
+
+.mural button:hover {
+    transform: scale(1.1);
+}
+
+
+/*--------mural------*/
+
+/* -------- Inicio das informações ---------- */
+
+
+.atingidos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    color: #fff;
+    margin-top: -180px;
+}
+
+.atingidos .pessoas,
+.pessoas-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 50px;
+}
+
+
+.pessoas-1 h2 {
+    background-color: #FFF500;
+    color: #00923f;
+    padding: 3px 10px;
+    border-radius: 8px;
+}
+
+
+.pessoas i {
+    font-size: 40px;
+    color: #fff;
+}
+
+.pessoas-1 i {
+    font-size: 40px;
+    color: #fff;
+}
+
+.titulo-pessoas {
+    background-color: #00923F;
+    height: 260px;
+    margin: 70px 0;
+}
+
+.titulo2 h2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 0;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.veja-mais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.veja-mais h2 {
+    background-color: #FFF500;
+    color: #00923f;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.veja-mais h2:hover {
+    transform: scale(1.1);
+}
+
+
+/* -------- Fim das informações ---------- */
+
+.depoimento-1 {
+    display: flex;
+    justify-content: center;
+    padding: 10% 12%;
+}
+
+.depoimento-1 img {
+    width: 450px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.depoimento-1 .txt-depoimento {
+    padding: 0 40px;
+}
+
+.depoimento-1 .txt-depoimento p.txt-2 {
+    padding: 10px 0;
+}
+
+.depoimento-1 .txt-depoimento p strong {
+    color: #00923F;
+}
+
+.depoimento-1 h2 {
+    padding: 6px;
+    text-align: center;
+    background-color: #00923F;
+    color: #fff;
+    width: 120px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 20px;
+    font-size: 17px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.depoimento-1 h2:hover {
+    transform: scale(1.1);
+}
+
+.depoimento-2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 12%;
+}
+
+.depoimento-2 img {
+    width: 450px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.depoimento-2 p {
+    padding: 0 50px;
+}
+
+.txt-depoimento2 h2 {
+    padding: 6px;
+    text-align: center;
+    background-color: #00923F;
+    color: #fff;
+    width: 120px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 20px;
+    font-size: 17px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.comoajudar h6 {
+    margin-left: 100px;
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #00923F;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+
+.linha-3 {
+    border-bottom: solid 3px #D22B2B;
+    margin-bottom: 5px;
+    width: 420px;
+    margin-left: 100px;
+}
+
+.linha-4 {
+    border-bottom: solid 3px #00923F;
+    width: 470px;
+    margin-left: 100px;
+}
+
+/* cards */
+.card1 {
+    padding: 30px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    transition: 1s;
+    cursor: pointer;
+    margin-bottom: 10%;
+    border-top: 5px #00923F solid;
+}
+
+.card2 {
+    padding: 30px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    transition: 1s;
+    cursor: pointer;
+    margin-bottom: 10%;
+    border-top: 5px #00923F solid;
+}
+
+.card3 {
+    padding: 30px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    transition: 1s;
+    cursor: pointer;
+    margin-bottom: 10%;
+    border-top: 5px #00923f solid;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: #00923F;
+    margin-top: 80px;
+}
+
+
+/* h2cards */
+
+
+.card1 h2 {
+    font-size: 18px;
+    margin-bottom: 20%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.card2 h2 {
+    font-size: 18px;
+    margin-bottom: 20%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.card3 h2 {
+    font-size: 22px;
+    margin-bottom: 20%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.card1 p {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.card3 p {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* saiba mais */
+.card1 a {
+    margin-top: 15%;
+    border-radius: 20px;
+    padding: 5% 10%;
+    background-color: #00923F;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    width: 130px;
+    margin-left: 17%;
+    font-weight: 600;
+}
+
+.card2 a {
+    border-radius: 20px;
+    padding: 5% 10%;
+    background-color: #00923F;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    width: 130px;
+    margin-left: 17%;
+    font-weight: 600;
+}
+
+.card3 a {
+    margin-top: 10%;
+    border-radius: 20px;
+    padding: 5% 10%;
+    background-color: #00923F;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    width: 130px;
+    margin-left: 17%;
+    font-weight: 600;
+}
+
+
+/* hovercards */
+.card1:hover {
+    transform: scale(1.1);
+}
+
+.card2:hover {
+    transform: scale(1.1);
+}
+
+.card3:hover {
+    transform: scale(1.1);
+}
+
+/* footer */
+
+footer {
+    background-color: #00923F;
+    padding-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo-footer {
+    padding: 0 20px;
+}
+
+.logo-footer img {
+    margin-top: -10px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 3%;
+}
+
+.voluntario {
+    width: 700px;
+}
+
+.voluntario h2 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.voluntario p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.voluntario p a {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.mapa-site {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 14px;
+}
+
+.mapa-site h2 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.mapa-site ul li {
+    list-style-type: none;
+    margin-right: 22px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.mapa-site a {
+    text-decoration: none;
+}
+
+.mapa-site ul li a:hover {
+    color: #ffffff65;
+}
+
+.ajude {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.ajude .qrcode img {
+    height: 160px;
+    margin-right: 60px;
+}
+
+.ajude .qrcode button {
+    font-size: 10px;
+    padding: 5px 5px;
+    background-color: #ffffff30;
+    list-style-type: none;
+    border: none;
+    color: #fff;
+    font-weight: 100;
+}
+
+.ajude .txt-ajude {
+    padding: 0 10px;
+    margin: 0 60px;
+    margin-top: -65px;
+}
+
+.ajude .txt-ajude h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+.ajude .txt-ajude p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.logo-footer button:hover {
+    background-color: #ffffff30;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.logo-footer button {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.logo-footer button {
+    background: none;
+    padding: 5px 12px;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.logo-footer button i {
+    color: #fff;
+    padding: 0 4px;
+}
+
+.logo-footer .linha-10 {
+    border-bottom: solid 3px #d22b2b;
+    padding: 6px;
+    margin-right: 50px;
+
+}
+
+.logo-footer .linha-11 {
+    border-bottom: solid 3px #FFF500;
+    padding: 2px;
+}
+
+p.copy {
+    text-align: center;
+    color: #fff;
+}
+
+/* Ícone do menu desktop */
+.desktop-menu-icon {
+    display: none;
+}
+
+/* -------- Fim do footer ---------- */
+
+/* Estilos responsivos para telas menores que 768px */
+@media (max-width: 768px) {
+
+    /* Header responsivo */
+    .logo {
+        margin-left: 20px;
+    }
+
+    .desktop-menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .desktop-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #00923F;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        border-radius: 10px;
+        z-index: 101;
+    }
+
+    .desktop-menu li {
+        margin: 10px 0;
+    }
+
+    .desktop-menu li a {
+        color: #fff;
+    }
+
+    .desktop-menu .ajudar {
+        color: #00923F;
+    }
+
+    .desktop-menu.active {
+        display: flex;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .banner {
+        height: 60vh;
+        margin-top: -20px;
+    }
+
+    .titulo {
+        margin-left: 20px;
+        margin-top: 210px;
+    }
+
+    .titulo h1 {
+        margin-left: 120px;
+        font-size: 35px;
+    }
+
+    .titulo h2 {
+        margin-left: 155px;
+        margin-right: 20px;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    .linha-1 {
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+
+    .linha-2 {
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+
+    .historia {
+        flex-direction: column;
+        margin: 20px 5%;
+    }
+
+    .historia img {
+        height: 200px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .historia h2 {
+        margin-left: 0;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .historia p {
+        width: 100%;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .historia .btn {
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
+
+    .btn button {
+        width: 100px;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .mural {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .atingidos {
+        flex-direction: column;
+    }
+
+    .atingidos .pessoas,
+    .pessoas-1 {
+        margin: 12px 0;
+    }
+
+    .titulo-pessoas {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .titulo2 h2 {
+        font-size: 24px;
+
+    }
+
+    .atingidos .pessoas h2,
+    .pessoas-1 h2 {
+        font-size: 24px;
+    }
+
+    .atingidos .pessoas h3,
+    .pessoas-1 h3 {
+        font-size: 18px;
+    }
+
+    .atingidos .pessoas i,
+    .pessoas-1 i {
+        font-size: 30px;
+    }
+
+    .depoimento-1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .depoimento-1 img {
+        width: 350px;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .txt-depoimento {
+        width: 400px;
+    }
+
+    .depoimento-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .depoimento-2 img {
+        height: 100%;
+        width: 350px;
+        margin-bottom: 30px;
+    }
+
+    .depoimento-1 h2 {
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: center;
+    }
+
+    .txt-depoimento2 {
+        width: 400px;
+    }
+
+    .depoimento-2 h2 {
+        margin-left: 135px;
+        margin-right: 135px;
+        text-align: center;
+    }
+
+    .comoajudar h6 {
+        margin-left: 20px;
+        font-size: 30px;
+    }
+
+    .linha-3,
+    .linha-4 {
+        margin-left: 20px;
+        width: calc(100% - 40px);
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .card1 h2,
+    .card2 h2,
+    .card3 h2 {
+        margin-bottom: 15px;
+    }
+
+    .card1 a,
+    .card2 a,
+    .card3 a {
+        margin-left: 80px;
+        margin-right: 60px;
+        padding: 6px 15px;
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 20px 0;
+        height: auto;
+        margin-top: 60px;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .voluntario,
+    .ajude {
+        width: 90%;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .mapa-site h2 {
+        font-weight: 600;
+    }
+
+    .mapa-site ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .mapa-site ul li {
+        display: flex;
+        justify-content: center;
+        width: 130px;
+        margin-left: 14px;
+        margin-bottom: 4px;
+        margin: 0;
+    }
+
+    .ajude {
+        flex-direction: column;
+    }
+
+    .ajude .qrcode img {
+        margin-left: 60px;
+    }
+
+    .ajude .qrcode {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ajude .txt-ajude {
+        margin: 10px 0;
+    }
+
+    .linha-10,
+    .linha-11 {
+        opacity: 0;
+    }
+}

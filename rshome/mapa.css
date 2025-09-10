@@ -1,0 +1,886 @@
+@charset "UTF-8";
+
+/* Reseta margens, padding e define a fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove a barra de rolagem do navegador */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Define a fonte do corpo */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff4b;
+}
+
+/* -------- Inicio do Header ---------- */
+
+/* Define um container centralizado com largura máxima de 1280px */
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* Utiliza flexbox para alinhamento */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estiliza o header com cor de fundo, padding e posição fixa */
+header {
+    font-family: "Open Sans", sans-serif;
+    background-color: transparent;
+    width: 100%;
+    padding: 40px 5%;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    font-weight: 700;
+    z-index: 100;
+}
+
+/* Estiliza a logo do header */
+.logo {
+    margin-left: 70px;
+}
+
+.logo::after {
+    background-color: transparent;
+}
+
+/* Remove a lista de estilo padrão */
+header ul {
+    list-style-type: none;
+}
+
+/* Define o estilo dos itens da lista */
+header ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+/* Estiliza os links do header */
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Botão de ajuda com cor de fundo e transição */
+.ajudar {
+    margin-top: -10px;
+    display: inline-block;
+    color: #00923f;
+    background-color: #FFF500;
+    padding: 10px;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.ajudar::after {
+    background-color: transparent;
+}
+
+.ajudar:hover {
+    transform: scale(1.2);
+}
+
+/* Efeito hover nos links do header */
+header a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    position: relative;
+}
+
+header a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: white;
+    transition: width .4s;
+}
+
+header a:hover::after {
+    width: 100%;
+}
+
+/* Menu desktop */
+.desktop-menu {
+    display: flex;
+}
+
+/* Ícone do menu móvel */
+.mobile-menu-icon {
+    display: none;
+}
+
+/* -------- Fim do Header ---------- */
+
+/* -------- Inicio do Banner ---------- */
+
+/* Estiliza o banner com imagem de fundo e flexbox */
+.banner {
+    background-image: url(imagens/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -12%;
+    /* Permite que os elementos se ajustem em telas menores */
+}
+
+/* Define o tamanho das imagens dentro do banner */
+
+/* Texto do banner */
+.banner .txt-banner {
+    margin-left: 100px;
+    max-width: 100%;
+    /* Garante que o texto não exceda a largura do contêiner */
+}
+
+/* Estiliza os textos do banner */
+.banner .txt-banner h2,
+.banner .txt-banner h3 {
+    text-align: justify;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.banner .txt-banner h2 {
+    font-size: 35px;
+    color: #FFF500;
+}
+
+.banner .txt-banner h3 {
+    font-size: 20px;
+}
+
+.banner .txt-banner h4 {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Linha decorativa */
+.linha {
+    border-bottom: solid 4px #d22b2b;
+    margin: 20px 0;
+    margin-right: 120px;
+}
+
+.linha-2 {
+    border-bottom: solid 4px #FFF500;
+    margin-top: -15px;
+}
+
+/* -------- Fim do Banner ---------- */
+
+/* Container para a galeria de imagens */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Container de cada imagem na galeria */
+.image-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin: 15px;
+    padding: 40px 20px;
+}
+
+.image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 3s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.image-container img.second-image {
+    opacity: 0;
+}
+
+.image-container:hover img.first-image {
+    opacity: 0;
+}
+
+.image-container:hover img.second-image {
+    opacity: 1;
+}
+
+/* Estilos para a seção de locais */
+.locais {
+    margin-left: 150px;
+    padding: 20px 0;
+}
+
+.locais p {
+    padding: 4px 0;
+}
+
+/* Estilos para ícones e linhas de diferentes cores */
+.locais p.vermelho i {
+    color: #d22b2b;
+    padding: 0 5px;
+}
+
+.linha-vermelho {
+    border-bottom: solid 2px #d22b2b;
+    margin: 10px 0;
+    margin-right: 700px;
+}
+
+.locais p.verde i {
+    color: #00923F;
+    padding: 0 5px;
+}
+
+.linha-verde {
+    border-bottom: solid 2px #00923F;
+    margin: 10px 0;
+    margin-right: 650px;
+}
+
+.locais p.amarelo i {
+    color: #FFF500;
+    padding: 0 5px;
+}
+
+.linha-amarelo {
+    border-bottom: solid 2px #00923F;
+    margin: 10px 0;
+    margin-right: 780px;
+}
+
+.locais p.marrom i {
+    color: #964b00;
+    padding: 0 5px;
+}
+
+.linha-marrom {
+    border-bottom: solid 2px #964b00;
+    margin: 10px 0;
+    margin-right: 800px;
+}
+
+/* -------- Inicio do mapa---------- */
+
+/* Estiliza a seção de mapa com flexbox */
+.mapa-inter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa-inter iframe {
+    height: 450px;
+    width: 60%;
+    border-bottom: 6px solid;
+    border-image: linear-gradient(to right, #00923F 0%, #00923F 33%, #d22b2b 33%, #d22b2b 66%, #FFF500 66%, #FFF500 100%);
+    border-image-slice: 1;
+}
+
+/* Estiliza o contêiner do mapa */
+.mapa {
+    padding: 8% 0;
+}
+
+/* Texto do mapa */
+.mapa-txt h2 {
+    padding: 10px 0;
+    font-size: 40px;
+    color: #00923F;
+}
+
+/* Linhas decorativas */
+.linha-3 {
+    border-bottom: solid 2px #d22b2b;
+    margin-right: 700px;
+}
+
+.linha-10 {
+    border-bottom: solid 2px #00923F;
+    margin-right: 600px;
+    padding: 2px 0;
+}
+
+/* Texto do mapa */
+.mapa-txt p {
+    width: 60%;
+    padding: 10px 0;
+}
+
+.mapa-txt {
+    padding: 20px 8%;
+}
+
+/* -------- Fim do mapa ---------- */
+
+/* -------- Inicio das informações ---------- */
+
+/* Estiliza a seção de informações atingidas */
+.atingidos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    color: #fff;
+}
+
+/* Estiliza os elementos de informações de pessoas */
+.atingidos .pessoas,
+.pessoas-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 6px 50px;
+}
+
+/* Estiliza o cabeçalho das pessoas */
+.pessoas-1 h2 {
+    background-color: #FFF500;
+    color: #00923F;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+/* Estiliza os ícones das pessoas */
+.pessoas i {
+    font-size: 40px;
+    color: #fff;
+}
+
+.pessoas-1 i {
+    font-size: 40px;
+    color: #fff;
+}
+
+/* Estiliza o título da seção de pessoas */
+.titulo-pessoas {
+    background-color: #00923F;
+    height: 250px;
+}
+
+.titulo h2 {
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+}
+
+
+
+
+
+/* -------- Fim das informações ---------- */
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.galeria .iframes iframe {
+    height: 300px;
+    width: 300px;
+    margin: 0 30px;
+}
+
+.galeria .iframes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Texto da galeria de vídeos */
+.galeria .iframes p {
+    background-color: #0062a7;
+    color: #fff;
+    padding: 8px 12px;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+/* Texto e ícones do mapa e galeria */
+.mapa-galeria p {
+    margin-left: 170px;
+    padding: 5px 0;
+}
+
+.mapa-galeria p.amarelo i {
+    color: yellow;
+    font-size: 25px;
+    padding: 0 8px;
+}
+
+.mapa-galeria p.marrom i {
+    color: #964b00;
+    font-size: 25px;
+    padding: 0 8px;
+}
+
+.mapa-galeria p.azul i {
+    color: #0062a7;
+    font-size: 25px;
+    padding: 0 8px;
+}
+
+.mapa-galeria {
+    padding: 50px 0;
+}
+
+/* -------- footer ---------- */
+
+/* Estiliza o footer */
+footer {
+    background-color: #00923F;
+    padding-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo-footer {
+    padding: 0 20px;
+}
+
+.logo-footer img {
+    margin-top: -10px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 3%;
+}
+
+.voluntario {
+    width: 700px;
+}
+
+.voluntario h2 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.voluntario p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.voluntario p a {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.mapa-site {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 14px;
+}
+
+.mapa-site h2 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.mapa-site ul li {
+    list-style-type: none;
+    margin-right: 22px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.mapa-site a {
+    text-decoration: none;
+}
+
+.mapa-site ul li a:hover {
+    color: #ffffff65;
+}
+
+.ajude {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.ajude .qrcode img {
+    height: 160px;
+    margin-right: 60px;
+}
+
+.ajude .qrcode button {
+    font-size: 10px;
+    padding: 5px 5px;
+    background-color: #ffffff30;
+    list-style-type: none;
+    border: none;
+    color: #fff;
+    font-weight: 100;
+}
+
+.ajude .txt-ajude {
+    padding: 0 10px;
+    margin: 0 60px;
+    margin-top: -65px;
+}
+
+.ajude .txt-ajude h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+.ajude .txt-ajude p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.logo-footer button:hover {
+    background-color: #ffffff30;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.logo-footer button {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.logo-footer button {
+    background: none;
+    padding: 5px 12px;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.logo-footer button i {
+    color: #fff;
+    padding: 0 4px;
+}
+
+.logo-footer .linha-10 {
+    border-bottom: solid 3px #d22b2b;
+    padding: 6px;
+    margin-right: 50px;
+
+}
+
+.logo-footer .linha-11 {
+    border-bottom: solid 3px #FFF500;
+    padding: 2px;
+}
+
+p.copy {
+    text-align: center;
+    color: #fff;
+}
+
+/* Ícone do menu desktop */
+.desktop-menu-icon {
+    display: none;
+}
+
+/* -------- Fim do footer ---------- */
+
+/* Estilos responsivos para telas menores que 768px */
+@media (max-width: 768px) {
+
+    /* Header responsivo */
+    .logo {
+        margin-left: 20px;
+        height: auto;
+    }
+
+    .desktop-menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .desktop-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #00923F;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        border-radius: 10px;
+        z-index: 101;
+    }
+
+    .desktop-menu li {
+        margin: 10px 0;
+    }
+
+    .desktop-menu li a {
+        color: #fff;
+    }
+
+    .desktop-menu .ajudar {
+        color: #00923F;
+    }
+
+    .desktop-menu.active {
+        display: flex;
+    }
+
+    /* Banner responsivo */
+    .banner {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+
+    .banner .txt-banner {
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+
+    .banner .txt-banner h2 {
+        font-size: 25px;
+    }
+
+    .banner .txt-banner h3 {
+        font-size: 18px;
+        margin-right: 80px;
+    }
+
+    .banner .txt-banner h4 {
+        opacity: 0;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        width: 250px;
+        /* Mantém o tamanho original da imagem */
+        height: 200px;
+        /* Mantém o tamanho original da imagem */
+        padding: 20px;
+        /* Ajuste o padding conforme necessário */
+    }
+
+    .image-container img {
+        width: 100%;
+        /* Mantém a largura 100% do contêiner */
+        height: 100%;
+        /* Mantém a altura 100% do contêiner */
+        object-fit: cover;
+        /* Garante que a imagem preencha o contêiner sem distorção */
+    }
+
+    /* Locais responsivos */
+    .locais {
+        margin-right: 50px;
+        margin-left: 20px;
+    }
+
+    .linha-vermelho,
+    .linha-verde,
+    .linha-amarelo,
+    .linha-marrom {
+        margin-right: 80px;
+    }
+
+    .locais p {
+        font-size: 16px;
+    }
+
+    .mapa-txt h2 {
+        font-size: 25px;
+    }
+
+
+    .mapa-txt p {
+        font-size: 16px;
+        width: 90%;
+        padding: 10px 0;
+    }
+
+    .mapa-inter iframe {
+        width: 80%;
+        height: 300px;
+    }
+
+    .atingidos {
+        flex-direction: column;
+    }
+
+    .atingidos .pessoas,
+    .pessoas-1 {
+        margin: 10px 0;
+    }
+
+    .titulo-pessoas {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .titulo h2 {
+        font-size: 24px;
+        padding: 10px 0;
+    }
+
+    .atingidos .pessoas h2,
+    .pessoas-1 h2 {
+        font-size: 24px;
+    }
+
+    .atingidos .pessoas h3,
+    .pessoas-1 h3 {
+        font-size: 18px;
+    }
+
+    .atingidos .pessoas i,
+    .pessoas-1 i {
+        font-size: 30px;
+    }
+
+    .galeria {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .galeria .iframes iframe {
+        height: 200px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .galeria .iframes {
+        flex-direction: column;
+    }
+
+    .mapa-galeria p {
+        margin-left: 10px;
+        margin-right: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mapa-galeria {
+        padding: 20px 0;
+    }
+
+    footer {
+        padding: 20px 0;
+        height: auto;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .voluntario,
+    .ajude {
+        width: 90%;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .mapa-site h2 {
+        font-weight: 600;
+    }
+
+
+    .mapa-site h2 {
+        font-weight: 600;
+    }
+
+    .mapa-site ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .mapa-site ul a {
+        margin: 5px 10px;
+        width: calc(41% - 100px);
+        margin-left: 50px;
+    }
+
+
+
+    .ajude {
+        flex-direction: column;
+    }
+
+    .ajude .qrcode img {
+        margin-left: 60px;
+    }
+
+    .ajude .qrcode {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ajude .txt-ajude {
+        margin: 10px 0;
+    }
+
+    .linha-10,
+    .linha-11 {
+        opacity: 0;
+    }
+
+    header {
+        background-color: #00923F;
+        margin-bottom: 20px;
+    }
+
+}
