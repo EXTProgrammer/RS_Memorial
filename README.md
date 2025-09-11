@@ -1,4 +1,4 @@
-# RS_Memorial
+# RS Memorial
 
 Site memorial realizado durante as enchentes no Rio Grande do Sul, desenvolvido em 2024 no Instituto da Oportunidade Social.
 Permite Upload de imagens e mensagens, sistema de paginação, história, acesso a informações oficiais.
